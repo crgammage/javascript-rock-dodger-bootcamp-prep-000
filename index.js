@@ -65,7 +65,9 @@ function createRock(x) {
   var top = 0
 
   rock.style.top = top
-window.requestAnimationFrame(rock)
+window.requestAnimationFrame() {
+  rock.append('GAME')
+}
   /**
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
