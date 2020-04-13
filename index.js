@@ -21,7 +21,14 @@ function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
   const top = positionToInteger(rock.style.top)
-
+  document.addEventListener('keydown', function(e) {
+    if (e.which === 37) {
+      var leftNumbers = dodger.style.left.replace('px', '')
+      var left = parseInt(leftNumbers, 10)
+   
+      dodger.style.left = `${left - 1}px`
+    }
+  })
   // rocks are 20px high
   // DODGER is 20px high
   // GAME_HEIGHT - 20 - 20 = 360px;
