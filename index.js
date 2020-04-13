@@ -17,18 +17,11 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
-function checkCollision(rock) {
+function checkCollision(rock)
   // implement me!
   // use the comments below to guide you!
   const top = positionToInteger(rock.style.top)
-  function start {
-    document.addEventListener('keydown', function(e) {
-      if (e.which === 37) {
-        var leftNumbers = dodger.style.left.replace('px', '')
-        var left = parseInt(leftNumbers, 10)
-        dodger.style.left = `${left - 1}px`
-      }}
-  })
+
   // rocks are 20px high
   // DODGER is 20px high
   // GAME_HEIGHT - 20 - 20 = 360px;
@@ -154,6 +147,13 @@ function positionToInteger(p) {
 
 function start() {
   window.addEventListener('keydown', moveDodger)
+  // const top = positionToInteger(rock.style.top)
+  // document.addEventListener('keydown', function(e) {
+  //     if (e.which === 37) {
+  //       var leftNumbers = dodger.style.left.replace('px', '')
+  //       var left = parseInt(leftNumbers, 10)
+  //       dodger.style.left = `${left - 1}px`
+  //     }}
 
   START.style.display = 'none'
 
